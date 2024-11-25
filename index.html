@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Neon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 Neon 21 🎲</h1>
+        </header>
+
+        <main>
+            <div class="game-info">
+                <p>Gils : <span id="gil-count">1000</span></p>
+                <p>Pari actuel : <span id="current-bet">0</span> Gils</p>
+            </div>
+
+            <div class="controls">
+                <input type="number" id="bet-input" placeholder="Entrez votre pari" min="10" max="1000">
+                <button id="place-bet">Placer le pari</button>
+                <button id="deal">Distribuer</button>
+            </div>
+
+            <div class="game-board">
+                <div class="player-hand">
+                    <h2>Votre main</h2>
+                    <div id="player-cards" class="cards"></div>
+                    <p>Score : <span id="player-score">0</span></p>
+                </div>
+                <div class="dealer-hand">
+                    <h2>Neon Pulse</h2>
+                    <div id="dealer-cards" class="cards"></div>
+                    <p>Score : <span id="dealer-score">0</span></p>
+                </div>
+            </div>
+
+            <div id="message"></div>
+        </main>
+
+        <footer>
+            <p>Crée par Calypso</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
